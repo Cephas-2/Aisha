@@ -1,0 +1,256 @@
+:root {
+  --paa-green: #0024b3;
+  --paa-orange: #cad011;
+}
+
+/* Global */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background:transparent;
+}
+
+/* Navbar hover underline effect */
+.navbar a {
+  color: #fff !important;
+  font-weight: 500;
+  position: relative; /* needed for pseudo-element */
+  text-decoration: none;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px; /* distance from text */
+  background-color: var(--paa-orange); /* blue line */
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%; /* full width underline on hover */
+}
+
+
+/* Hero */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/Aisha-Jumwa.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 300px 20px;
+  position: relative;
+    display: flex;
+  align-items: flex-end; /* moves content to bottom */
+  justify-content: center;
+  height: 700px; /* adjust as needed */
+  padding-bottom: 50px; /* space from bottom */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero span {
+  color: var(--paa-orange);
+}
+
+/* Buttons */
+.btn-paa {
+  background: var(--paa-green);
+  color: #fff;
+  padding: 12px 25px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-paa:hover {
+  background: #cad011;
+}
+
+/* Section Titles */
+.section-title {
+  color: var(--paa-green);
+  font-weight: bold;
+}
+
+/* Pillars */
+.pillar-icon {
+  font-size: 40px;
+  color: #0024b3 ;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 25px 0;
+  text-align: center;
+}
+
+
+/* =======================
+   ABOUT PAGE STYLES
+   ======================= */
+
+/* HERO SECTION - ABOUT PAGE */
+.hero-about {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/mani.webp") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 300px 20px;
+  position: relative;
+    display: flex;
+  align-items: flex-end; /* moves content to bottom */
+  justify-content: center;
+  height: 700px; /* adjust as needed */
+  padding-bottom: 50px; /* space from bottom */
+}
+
+.hero-about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-about p.lead {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #cad011; /* highlight tagline */
+}
+
+/* ABOUT QUOTE SECTION */
+.about-quote {
+  background-color: #000; /* black background */
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-quote blockquote {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0 auto 40px auto;
+  max-width: 800px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.about-quote blockquote::before {
+  content: "“";
+  font-size: 3rem;
+  vertical-align: top;
+  color: #cad011;
+  margin-right: 5px;
+}
+
+.about-quote .quote-author {
+  font-size: 1rem;
+  color: #cad011;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Make candidate paragraphs white in the black quote section */
+.about-quote p {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 25px 0;
+  text-align: center;
+}
+
+
+
+/* =======================
+   ACTION PLAN
+   ======================= */
+   /* Hero Section for Action Plan */
+.hero-about {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/festo.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+   padding: 300px 20px;
+  position: relative;
+    display: flex;
+  align-items: flex-end; /* moves content to bottom */
+  justify-content: center;
+  height: 800px; /* adjust as needed */
+  padding-bottom: 50px; /* space from bottom */
+}
+
+.hero-about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-about .lead {
+  font-size: 1.2rem;
+}
+
+/* Action Plan Section */
+.action-plan .plan-item {
+  background-color: #f8f9fa;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.action-plan .plan-item h2 {
+  color: var(--paa-green);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.action-plan .plan-item p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Download Button */
+.btn-paa {
+  background: var(--paa-green);
+  color: #fff;
+  padding: 12px 25px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-paa:hover {
+  background: var(--paa-orange);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 25px 0;
+  text-align: center;
+}
