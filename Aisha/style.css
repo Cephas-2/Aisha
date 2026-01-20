@@ -254,3 +254,92 @@ footer {
   padding: 25px 0;
   text-align: center;
 }
+
+
+/* =========================
+   UPDATES PAGE
+========================= */
+
+/* Hero section */
+.hero-updates {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("images/Aisha-Jumwa\ \(1\).jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+    padding: 300px 20px;
+  position: relative;
+    display: flex;
+  align-items: flex-end; /* moves content to bottom */
+  justify-content: center;
+  height: 800px; /* adjust as needed */
+  padding-bottom: 50px; /* space from bottom */
+}
+
+/* Updates section */
+.updates-section {
+  background: #f9f9f9;
+}
+
+/* Update card */
+.update-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Date */
+.update-date {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--paa-orange);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Titles */
+.update-card h3 {
+  color: var(--paa-green);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Media wrapper */
+.update-media {
+  margin: 20px 0;
+}
+
+/* Images */
+.update-media img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Videos */
+.update-media video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Paragraph */
+.update-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  .hero-updates {
+    padding: 200px 20px 100px;
+  }
+
+  .update-card {
+    padding: 20px;
+  }
+}
