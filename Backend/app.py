@@ -7,7 +7,7 @@ from flask_cors import CORS
 import os
 
 # ----------------- App Config -----------------
-app = Flask(__name__)
+app = Flask(__name__)  
 CORS(app)  
 
 # ⚠️ Never hardcode secrets in production
