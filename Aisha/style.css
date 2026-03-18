@@ -1,6 +1,6 @@
 :root {
-  --paa-green: #176304;
-  --paa-orange: #cad011;
+  --paa-green: #1e5b0e;
+  --paa-orange: #dae109;
 }
 
 /* Global */
@@ -86,7 +86,7 @@ body {
 /* Pillars */
 .pillar-icon {
   font-size: 40px;
-  color: #0024b3 ;
+  color: #1e5b0e ;
   margin-bottom: 15px;
 }
 
